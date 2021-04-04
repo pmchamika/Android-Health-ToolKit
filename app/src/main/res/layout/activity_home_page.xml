@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.chamikaprabath.myapplication.HomePageActivity"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/home_new_task"
+        android:layout_width="271dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="164dp"
+        android:layout_marginLeft="55dp"
+        android:onClick="onClickNew"
+        android:text="@string/home_new_button"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/home_full_list"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="onClickFullList"
+        android:text="@string/home_task_button"
+        android:textAlignment="center"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_new_task"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/list_button"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/background"
+        android:onClick="onClickFullList"
+        android:text="@string/button_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/new_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priority_list_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/home_priority_list"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="25dp"
+        android:onClick="onClickPriorityList"
+        android:text="@string/priority_tasks"
+        android:textAlignment="center"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_full_list"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/priority_list_button"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="180dp"
+        android:background="@color/background"
+        android:onClick="onClickPriorityList"
+        android:text="@string/button_name"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="168dp"
+        android:layout_marginRight="7dp"
+        android:background="@color/background"
+        android:onClick="onClickNew"
+        android:text="@string/button_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/home_info"
+        android:layout_width="281dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:accessibilityHeading="false"
+        android:fontFamily="serif"
+        android:text="@string/home_info"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

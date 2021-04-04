@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/load"
+    tools:context=".LoadingScreen">
+
+    <TextView
+        android:id="@+id/new_task_title3"
+        android:layout_width="276dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="272dp"
+        android:text="Health Care App"
+        android:textColor="#00c14a"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_task_title2"
+        android:layout_width="228dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="164dp"
+        android:text="WELCOME"
+        android:textColor="#00c14a"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
